@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: yourdatabase
+      POSTGRES_USER: youruser
+      POSTGRES_PASSWORD: yourpassword
+
+  web:
+    image: django:latest
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DJANGO_SETTINGS_MODULE=yourproject.settings
+      - DATABASE_URL=postgres://youruser:yourpassword@db:5432/yourdatabase
+    env_file:
+      - .env
+
+volumes:
+  postgres_data:
