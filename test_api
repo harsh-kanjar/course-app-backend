@@ -1,0 +1,26 @@
+1) Add course
+
+url - http://127.0.0.1:8000/api/courses/
+
+example payload :- 
+{
+  "title": "Introduction to Computer Architecture",
+  "course_code": "CS 103",
+  "description": "This course provides a basic introduction to the architecture and algorithms of computer systems."
+}
+
+2) Fetch all courses 
+url - http://127.0.0.1:8000/api/courses/
+
+3) Add Instances 
+url - http://127.0.0.1:8000/api/instances/
+
+example payload :- 
+{
+    "year": 2024,
+    "semester": 1,
+    "course": 1
+}
+
+4) Fetch All instances 
+url - url - http://127.0.0.1:8000/api/instances/
