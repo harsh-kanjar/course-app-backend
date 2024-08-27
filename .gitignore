@@ -1,0 +1,98 @@
+# Django specific
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+db.sqlite3
+/static/
+/media/
+
+# Environment variables
+.env
+.env.*
+
+# Django migrations
+**/migrations/*
+!**/migrations/__init__.py
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Python virtual environment
+venv/
+ENV/
+env/
+.env/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Local settings (can be overwritten by others)
+local_settings.py
+
+# Other files
+*.sqlite3
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite
+*.csv
+
+# Backup files
+*.bak
+*.swp
+*.swo
+
+# Test coverage reports
+coverage/
+*.cover
+*.py,cover
+
+# IDE or editor configurations
+*.sublime-project
+*.sublime-workspace
+*.kate-swp
+*.idea/
+*.vscode/
+
+# Build directories
+build/
+dist/
+*.egg-info/
+
+# Compiled object files
+*.o
+*.so
+*.a
+*.pyc
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+
+# Distribution files
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# Other
+*.egg
+*.egg-info
+*.py[cod]
+*.pyo
+*.pyd
